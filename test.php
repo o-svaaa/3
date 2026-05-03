@@ -2,7 +2,7 @@
 // test_connection.php
 try {
     $pdo = new PDO(
-        "mysql:host=localhost;dbname=82671;charset=utf8mb4",
+        "mysql:host=localhost;dbname=82814;charset=utf8mb4",
         "u82814",
         "3096918"
     );
