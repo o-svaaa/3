@@ -12,7 +12,7 @@
         }
         
         body {
-            background: linear-gradient(145deg, #d4dcec 0%, #b7c4db 100%);
+            background: linear-gradient(145deg, #e0eaf4 0%, #cfdef3 100%);
             font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
             padding: 2rem 1.5rem;
             min-height: 100vh;
@@ -24,14 +24,14 @@
         .form-container {
             max-width: 980px;
             width: 100%;
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.97);
             border-radius: 2rem;
             box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.35);
             overflow: hidden;
         }
         
         .form-header {
-            background: linear-gradient(135deg, #2c3e4e, #1f2c38);
+            background: linear-gradient(135deg, #1a2a3f, #0f1a2a);
             padding: 1.8rem 2.5rem;
             color: white;
         }
@@ -76,7 +76,7 @@
         input, select, textarea {
             width: 100%;
             padding: 0.75rem 1rem;
-            border: 1.5px solid #d6dee7;
+            border: 1.5px solid #e2e8f0;
             border-radius: 1rem;
             font-size: 0.95rem;
             font-family: inherit;
@@ -85,8 +85,8 @@
         }
         
         input:focus, select:focus, textarea:focus {
-            border-color: #4a6f8f;
-            box-shadow: 0 0 0 3px rgba(74, 111, 143, 0.2);
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
         }
         
         .radio-group {
@@ -113,7 +113,7 @@
         .radio-group input {
             width: 18px;
             height: 18px;
-            accent-color: #4a6f8f;
+            accent-color: #3b82f6;
         }
         
         .checkbox-wrapper {
@@ -129,7 +129,7 @@
         .checkbox-wrapper input {
             width: 20px;
             height: 20px;
-            accent-color: #2c5a7a;
+            accent-color: #2563eb;
         }
         
         .checkbox-wrapper label {
@@ -148,7 +148,7 @@
         }
         
         select[multiple] option:checked {
-            background: #4a6f8f linear-gradient(0deg, #4a6f8f 0%, #4a6f8f 100%);
+            background: #3b82f6 linear-gradient(0deg, #3b82f6 0%, #3b82f6 100%);
             color: white;
         }
         
@@ -166,7 +166,7 @@
         }
         
         .save-btn {
-            background: linear-gradient(95deg, #2c4c6e, #1c3a55);
+            background: linear-gradient(95deg, #1e3a5f, #0f2b44);
             border: none;
             padding: 0.9rem 2.2rem;
             font-size: 1rem;
@@ -217,7 +217,7 @@
 <body>
 <div class="form-container">
     <div class="form-header">
-        <h1>Регистрационная анкета</h1>
+        <h1>📄 Регистрационная анкета</h1>
         <p>Заполните данные о себе — все поля проверяются на сервере</p>
     </div>
     
@@ -225,7 +225,7 @@
         <form method="POST" action="index.php">
             <!-- ФИО -->
             <div class="field-group">
-                <label for="fullname">ФИО *</label>
+                <label for="fullname">👤 ФИО *</label>
                 <div class="input-wrapper">
                     <input type="text" id="fullname" name="fullname" required>
                 </div>
@@ -233,7 +233,7 @@
             
             <!-- Телефон -->
             <div class="field-group">
-                <label for="phone">Телефон</label>
+                <label for="phone">📞 Телефон</label>
                 <div class="input-wrapper">
                     <input type="tel" id="phone" name="phone">
                 </div>
@@ -241,7 +241,7 @@
             
             <!-- Email -->
             <div class="field-group">
-                <label for="email">E-mail *</label>
+                <label for="email">✉️ E-mail *</label>
                 <div class="input-wrapper">
                     <input type="email" id="email" name="email" required>
                 </div>
@@ -249,7 +249,7 @@
             
             <!-- Дата рождения -->
             <div class="field-group">
-                <label for="birthdate">Дата рождения</label>
+                <label for="birthdate">🎂 Дата рождения</label>
                 <div class="input-wrapper">
                     <input type="date" id="birthdate" name="birthdate">
                 </div>
@@ -257,7 +257,7 @@
             
             <!-- Пол -->
             <div class="field-group">
-                <label>Пол</label>
+                <label>⚥ Пол</label>
                 <div class="input-wrapper radio-group">
                     <label><input type="radio" name="gender" value="male"> Мужской</label>
                     <label><input type="radio" name="gender" value="female"> Женский</label>
@@ -268,7 +268,7 @@
             
             <!-- Языки программирования -->
             <div class="field-group">
-                <label>Любимые языки *</label>
+                <label>💻 Любимые языки *</label>
                 <div class="input-wrapper">
                     <select name="fav_langs[]" id="fav_langs" multiple size="6" required>
                         <option value="Pascal">Pascal</option>
@@ -292,7 +292,7 @@
             
             <!-- Биография -->
             <div class="field-group">
-                <label for="bio">Биография</label>
+                <label for="bio">📝 Биография</label>
                 <div class="input-wrapper">
                     <textarea id="bio" name="bio" rows="4"></textarea>
                 </div>
@@ -300,7 +300,7 @@
             
             <!-- Контракт -->
             <div class="field-group">
-                <label>Согласие</label>
+                <label>📑 Согласие</label>
                 <div class="input-wrapper checkbox-wrapper">
                     <input type="checkbox" id="contractCheck" name="contract_agreed" required>
                     <label for="contractCheck">Я ознакомлен(а) с условиями пользовательского соглашения *</label>
@@ -309,7 +309,7 @@
             
             <!-- Кнопка сохранения -->
             <div class="action-buttons">
-                <button type="submit" class="save-btn">Сохранить</button>
+                <button type="submit" class="save-btn">💾 Сохранить</button>
             </div>
         </form>
     </div>
